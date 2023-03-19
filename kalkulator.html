@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator</title>
+    <style type="text/css">
+      body {
+        background-color: #33c3ff;
+        font-family: Comic Sans MS;
+      }
+      table{
+                background-color: whitesmoke;
+                border: 3px ridge whitesmoke
+            }
+            
+      th {
+        text-align: center;
+        font-size: 180%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 10px 10px 0px 10px;
+         }
+
+         label {
+        text-align: center;
+        font-size: 100%;
+        margin-left: 10%;
+        margin-right: 20%;
+         }
+       input{
+        text-align: center;
+        font-size: 100%;
+       }  
+       button{
+        font-size: 100%;
+        
+       }
+    </style>
+    <script src="js/calc.js"></script>
+  </head>
+  <body>
+    <h1></h1>
+    <table align="center"border="2 " cellspacing="0" cellpadding="20" width="45%" ></br>
+        <tr bgcolor="yellow">
+        <th>Kalkulator Sederhana</th>
+				</tr>
+			</thead>
+            <tbody>
+                <tr>
+                    <form id="calculator">
+                    <td colspan="5">
+                        <label for="number1">Angka 1:</label>
+                        <input type="text" id="number1" name="number1" /><br /><br />
+                        <label for="number2">Angka 2:</label>
+                        <input type="text" id="number2" name="number2" /><br /><br />
+                        <label for="result">Hasil:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="result" name="result" readonly /><br /><br />
+                    </tbody>
+                    <tfoot bgcolor="yellow">
+                        <TH colspan="2" align="center">
+                            <button type="button" onclick="add()">+</button>
+                            <button type="button" onclick="subtract()">-</button>
+                            <button type="button" onclick="multiply()">*</button>
+                            <button type="button" onclick="divide()">/</button>
+                        </tfoot>       
+         
+    </form>
+  </body>
+</html>
